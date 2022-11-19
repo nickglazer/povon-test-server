@@ -3,6 +3,6 @@ from classes.TestServer import *
 
 msgHandler = MessageHandler.MessageHandler()
 
-# Sniffs messages infinitely intil interuppted.
+# Sniffs messages infinitely until interrupted.
 while True:
     msgHandler.sniffMessages()

@@ -19,19 +19,18 @@ try:
 except:
     raise
 
-f = open(name,'w')
+f = open(name, 'w')
 f.close()
 
 testServer = TestServer()
 
 while True:
-    #get message, parsed, from message handler from test server
+    # get message, parsed, from message handler from test server
     dataString = testServer.waitForData()
-    
+
     if dataString == None:
         continue
-        
-    f = open(name,'a')
+
+    f = open(name, 'a')
     f.write(",".join([str(x/10) for x in dataString['data']])+'\n')
-    f.close()    
-    
+    f.close()

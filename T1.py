@@ -14,5 +14,5 @@ testServer.waitForMessage("PowerOn")
 testServer.waitForMessage("Polling")
 
 testServer.waitForMessage("StartReady")
-    
+
 print("\nTest Passed")
